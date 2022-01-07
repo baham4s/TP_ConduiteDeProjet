@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="question.js"></script>
+        <script type="text/javascript" src="function.js"></script>
         <div class="titre">
             <h1> serious game</h1>
         </div>
@@ -11,23 +13,33 @@
     <body>
         <div class="contener">
             <div class="image">
-                <p>ici on met l'image</p>
+                <div id="x"></div>
+                    <script>
+                        var img = document.createElement("img");
+                        img.src = data.Facile[0][0].image;
+
+                        var div = document.getElementById("x");
+                        div.appendChild(img);
+                        img.setAttribute("style", "width: 120px;");
+                        block.setAttribute("style", "text-align:center");
+                    </script>
             </div>
-            <div class="question ">
-                <p> ici on met la question </p>
+            <div class="question">
+                <p><script>
+                    window.addEventListener("load", function() {
+                        console.log(data)
+
+                    });
+                    document.write(data.Facile[0][0].question)
+                </script></p>
             </div>
             <div class="reponse">
                 <input type="text" id="name" name="name">      
             </div>
             <div class="valider">
-                <input type="button" value="Valider la reponse">     
-                </div>
+                <input type="button" value="Valider la reponse" onclick="compareAnswer()">
+            </div>
         </div>
-
-        <script src="data.json">
-         </script>
-        
-
     </body>
 </html>
 
