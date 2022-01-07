@@ -3,8 +3,8 @@ data={
     {
       "0":
       {
-        "question":"12 + 8 = ",
-        "reponse":"20",
+        "question":"12 + 7 = ",
+        "reponse":"19",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-rsoRsZi9Cfan2zolqSihuCz6t0QNEIjVbA&usqp=CAU"
       }
     },
