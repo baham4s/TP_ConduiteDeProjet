@@ -1,0 +1,30 @@
+.titre{
+    padding-top: 1%;
+    text-align: center;
+}
+.contener{
+    border:1px dotted black;  
+    text-align: center; 
+}
+.image{
+    background-color: aquamarine;
+}
+
+/*.valider {
+    width: 50px;
+    height: 30px;
+    background: #B9DFFF;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+}
+.valider:hover {
+background: #016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow:none;
+}*/
