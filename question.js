@@ -1,4 +1,4 @@
-// TODO : Rajouter 5 question dans question.js pcq valeur en dure dans le JS
+// TODO : Rajouter 5 question dans "Difficile" pcq valeur en dure dans le JS
 data={
   "Facile": [
     {
