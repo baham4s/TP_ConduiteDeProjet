@@ -1,4 +1,4 @@
-.titre{
+h1{
     padding-top: 1%;
     text-align: center;
 }
@@ -10,6 +10,9 @@
     background-color: aquamarine;
 }
 
+span{
+    display: block
+}
 /*.valider {
     width: 50px;
     height: 30px;

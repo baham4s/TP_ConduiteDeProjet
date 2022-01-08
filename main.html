@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <title>Serious Game GR6</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="question.js"></script>
         <script type="text/javascript" src="function.js"></script>
-        <div class="titre">
-            <h1> serious game</h1>
-        </div>
+        <h1>Serious game</h1>
     </head>
 
     <body>
         <div class="contener">
-            <div class="image">
-                <div id="x"></div>
-                    <script>
-                        var img = document.createElement("img");
-                        img.src = data.Facile[0][0].image;
-
-                        var div = document.getElementById("x");
-                        div.appendChild(img);
-                        img.setAttribute("style", "width: 120px;");
-                        block.setAttribute("style", "text-align:center");
-                    </script>
+            <div class="image" id="image">
+                <script>printImage();</script>
             </div>
-            <div class="question">
-                <p><script>
-                    window.addEventListener("load", function() {
-                        console.log(data)
 
-                    });
-                    document.write(data.Facile[0][0].question)
-                </script></p>
+
+            <div class="question" id="question">
+                <script>printQuestion("Facile")</script>
             </div>
+
+
             <div class="reponse">
-                <input type="text" id="name" name="name">      
+                <label for="reponseInput"></label>
+                <input type="text" id="reponseInput" name="name">
             </div>
+
+
             <div class="valider">
-                <input type="button" value="Valider la reponse" onclick="compareAnswer()">
+                <input type="submit" id="validerInput" value="Valider la reponse" onclick="update('Facile')">
+            </div>
+
+
+            <div id="printRes"></div>
+
+
+            <div id="compteur">
+                <p>Nombre de bonne réponse:
+                    <!--               <cpt> correspond a l'affichage de valeur du compteur-->
+                    <span id="cpt"></span>
+                    <!--               <res> correspond a l'affichage de la réponse si elle était fausse-->
+                    <span id="res"></span>
+                    <!--                Actualisation de l'affichage du score-->
+                    <script type="text/javascript">printScore()</script>
+                </p>
             </div>
         </div>
     </body>
