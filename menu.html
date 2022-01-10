@@ -13,14 +13,15 @@
     </head>
 
     <body>
+    <div id="theme">
         <h1> Menu</h1>
         <center><a>Choisissez un thème</a></center>
         <br>
         </br>
         <center>
             <button >
-            <a href="calcul.html"><span >CALCUL</span></a>
-            </button>
+            <a  value="ici" id="la"  onClick="save_donne()"><span >CALCUL</span></a> </button>
+
         </center>
 
         <center>
@@ -35,6 +36,45 @@
             </button>
         </center>
 
+    </div>
+    <div id="difficulte">
+        <h1> Menu</h1>
+        <center><a>Choisissez une difficulte</a></center>
+        <br>
+        </br>
+        <center>
+            <button >
+                <a  value="ici" id="la"  onClick="save_donne()"><span >Facile</span></a> </button>
+
+        </center>
+
+        <center>
+            <button >
+                <a href="lecture.html"><span >Normal</span></a>
+            </button>
+        </center>
+
+        <center>
+            <button >
+                <a href="ecriture.html"><span >Difficile</span></a>
+            </button>
+        </center>
+
+    </div>
+
+
+        <script>
+            var donne="NULL";
+            function save_donne(){
+                console.log(donne);
+                donne = document.getElementById('la').innerText;
+                document.getElementById('theme').style.display='none';
+                document.getElementById('difficulte').style.display='block';
+
+
+            }
+
+        </script>
     </body>
 </html>
 
