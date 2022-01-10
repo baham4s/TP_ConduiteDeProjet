@@ -7,9 +7,17 @@ let val = Math.floor(Math.random() * 10);
 let img;
 
 // Affiche si la réponse donné est bonne ou fausse
-function printResponse() {
+function printResponse(mode) {
     let rep = document.getElementById("reponseInput").value;
-    return strResponse(rep.localeCompare(data.Facile[val].reponse));
+    if (mode === "Facile"){
+        return strResponse(rep.localeCompare(data.Facile[val].reponse));
+    }
+    else if (mode === "Moyen"){
+        return strResponse(rep.localeCompare(data.Moyen[val].reponse));
+    }
+    else {
+        return strResponse(rep.localeCompare(data.Difficile[val].reponse));
+    }
 }
 
 
@@ -47,7 +55,8 @@ function printQuestion(mode){
 
 // Mise a jour de la page après clic sur button validé
 function update(mode){
-    printResponse();
+    stopGame(10);
+    printResponse(mode);
     val = Math.floor(Math.random() * 10);
     printQuestion(mode);
     deleteImage();
@@ -68,4 +77,12 @@ function printImage(){
 function deleteImage(){
     let div = document.getElementById("image");
     div.removeChild(img);
+}
+
+// Arrete le jeu lorsque un nombre de question est atteint et revient au menu principale
+function stopGame(limite){
+    if(limite === cpt_tot){
+        alert("Votre score : " + cpt_player + "/" + cpt_tot);
+        window.location.href = "menu.html"
+    }
 }
