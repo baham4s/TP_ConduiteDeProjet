@@ -59,6 +59,11 @@
                 <a href=# id="Difficile"  onClick="save_Difficile()"><span >Difficile</span></a>
             </button>
         </center>
+        <center>
+            <button >
+                <a href=# id="retour"  onClick="retour()"><span >retour</span></a>
+            </button>
+        </center>
 
     </div>
 
@@ -67,6 +72,10 @@
             var donne;
             var diff;
 
+            function retour() {
+                document.getElementById('theme').style.display = 'block';
+                document.getElementById('difficulte').style.display = 'none';
+            }
             function save_CALCUL() {
                 donne = document.getElementById('CALCUL').innerText;
                 document.getElementById('theme').style.display = 'none';
@@ -100,6 +109,7 @@
             }
             function save_Normal() {
                 diff = document.getElementById('Normal').innerText;
+
                 console.log(diff);
             } function save_Difficile() {
                 diff = document.getElementById('Difficile').innerText;
