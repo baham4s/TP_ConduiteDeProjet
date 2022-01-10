@@ -2,101 +2,110 @@
          envoie de diff sur page de jeu
          Ajout d'un parcours
          Faire un CSS propre
-         faire un profil user gardant le score -->
+         faire un profil user gardant le score-->
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <title>Serious Game GR6</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="style.css">
-    <img width="200" height="150" src="logo.PNG" alt="Paris" class="center">
-</head>
+    <head>
+        <title>Serious Game GR6</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+        <img width="200" height="150" src="logo.PNG" alt="Paris" class="center">
+    </head>
 
-<body>
-<div id="theme">
-    <h1> Menu</h1>
-    <center><a>Choisissez un thème</a></center>
-    <br>
-    </br>
-    <center>
-        <button >
-            <a   id="CALCUL"  onClick="save_CALCUL()"><span >CALCUL</span></a> </button>
+    <body>
+    <div id="theme">
+        <h1> Menu</h1>
+        <center><a>Choisissez un thème</a></center>
+        <br>
+        </br>
+        <center>
+            <button >
+            <a  href=# id="CALCUL"  onClick="save_CALCUL()"><span >CALCUL</span></a> </button>
 
-    </center>
+        </center>
 
-    <center>
-        <button >
-            <a id="LECTURE"  onClick="save_LECTURE()"><span >LECTURE</span></a>
-        </button>
-    </center>
+        <center>
+            <button >
+            <a href=# id="LECTURE"  onClick="save_LECTURE()"><span >LECTURE</span></a>
+            </button>
+        </center>
 
-    <center>
-        <button >
-            <a id="ECRITURE"  onClick="save_ECRITURE()"><span >ECRITURE</span></a>
-        </button>
-    </center>
+        <center>
+            <button >
+            <a href=# id="ECRITURE"  onClick="save_ECRITURE()"><span >ECRITURE</span></a>
+            </button>
+        </center>
 
-</div>
-<div id="difficulte">
-    <h1> Menu</h1>
-    <center><a>Choisissez une difficulte</a></center>
-    <br>
-    </br>
-    <center>
-        <button >
-            <a  id="Facile"  onClick="save_Facile()"><span >Facile</span></a> </button>
+    </div>
+    <div id="difficulte">
+        <h1> Menu</h1>
+        <center><a>Choisissez une difficulte</a></center>
+        <br>
+        </br>
+        <center>
+            <button >
+                <a  href=# id="Facile"  onClick="save_Facile()"><span >Facile</span></a> </button>
 
-    </center>
+        </center>
 
-    <center>
-        <button >
-            <a id="Normal"  onClick="save_Normal()"><span >Normal</span></a>
-        </button>
-    </center>
+        <center>
+            <button >
+                <a href=# id="Normal"  onClick="save_Normal()"><span >Normal</span></a>
+            </button>
+        </center>
 
-    <center>
-        <button >
-            <a id="Difficile"  onClick="save_Difficile()"><span >Difficile</span></a>
-        </button>
-    </center>
+        <center>
+            <button >
+                <a href=# id="Difficile"  onClick="save_Difficile()"><span >Difficile</span></a>
+            </button>
+        </center>
 
-</div>
+    </div>
 
 
-<script>
-    var donne;
-    var diff;
+        <script>
+            var donne;
+            var diff;
 
-    function save_CALCUL() {
-        donne = document.getElementById('CALCUL').innerText;
-        document.getElementById('theme').style.display = 'none';
-        document.getElementById('difficulte').style.display = 'block';
-        console.log(donne);
-    }
-    function save_LECTURE() {
-        donne = document.getElementById('LECTURE').innerText;
-        document.getElementById('theme').style.display = 'none';
-        document.getElementById('difficulte').style.display = 'block';
-        console.log(donne);
-    }
-    function save_ECRITURE() {
-        donne = document.getElementById('ECRITURE').innerText;
-        document.getElementById('theme').style.display = 'none';
-        document.getElementById('difficulte').style.display = 'block';
-        console.log(donne);
-    }
-    function save_Facile() {
-        diff = document.getElementById('Facile').innerText;
-        console.log(diff);
-    }
-    function save_Normal() {
-        diff = document.getElementById('Normal').innerText;
-        console.log(diff);
-    } function save_Difficile() {
-        diff = document.getElementById('Difficile').innerText;
-        console.log(diff);
-    }
-</script>
-</body>
+            function save_CALCUL() {
+                donne = document.getElementById('CALCUL').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
+                console.log(donne);
+            }
+            function save_LECTURE() {
+                donne = document.getElementById('LECTURE').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
+                console.log(donne);
+            }
+            function save_ECRITURE() {
+                donne = document.getElementById('ECRITURE').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
+                console.log(donne);
+            }
+            function save_Facile() {
+                diff = document.getElementById('Facile').innerText;
+                if( donne == "CALCUL"){
+                    location.href = "calcul.html";
+                }
+                if( donne == "LECTURE"){
+                    location.href = "lecture.html";
+                }
+                if( donne == "ECRITURE"){
+                    location.href = "ecriture.html";
+                }
+                console.log(diff);
+            }
+            function save_Normal() {
+                diff = document.getElementById('Normal').innerText;
+                console.log(diff);
+            } function save_Difficile() {
+                diff = document.getElementById('Difficile').innerText;
+                console.log(diff);
+            }
+        </script>
+    </body>
 </html>
 
