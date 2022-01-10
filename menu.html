@@ -20,19 +20,19 @@
         </br>
         <center>
             <button >
-            <a  value="ici" id="la"  onClick="save_donne()"><span >CALCUL</span></a> </button>
+            <a   id="CALCUL"  onClick="save_CALCUL()"><span >CALCUL</span></a> </button>
 
         </center>
 
         <center>
             <button >
-            <a href="lecture.html"><span >LECTURE</span></a>
+            <a id="LECTURE"  onClick="save_LECTURE()"><span >LECTURE</span></a>
             </button>
         </center>
 
         <center>
             <button >
-            <a href="ecriture.html"><span >ECRITURE</span></a>
+            <a id="ECRITURE"  onClick="save_ECRITURE()"><span >ECRITURE</span></a>
             </button>
         </center>
 
@@ -44,19 +44,19 @@
         </br>
         <center>
             <button >
-                <a  value="ici" id="la"  onClick="save_donne()"><span >Facile</span></a> </button>
+                <a  id="Facile"  onClick="save_Facile()"><span >Facile</span></a> </button>
 
         </center>
 
         <center>
             <button >
-                <a href="lecture.html"><span >Normal</span></a>
+                <a id="Normal"  onClick="save_Normal()"><span >Normal</span></a>
             </button>
         </center>
 
         <center>
             <button >
-                <a href="ecriture.html"><span >Difficile</span></a>
+                <a id="Difficile"  onClick="save_Difficile()"><span >Difficile</span></a>
             </button>
         </center>
 
@@ -64,16 +64,38 @@
 
 
         <script>
-            var donne="NULL";
-            function save_donne(){
+            var donne;
+            var diff;
+
+            function save_CALCUL() {
+                donne = document.getElementById('CALCUL').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
                 console.log(donne);
-                donne = document.getElementById('la').innerText;
-                document.getElementById('theme').style.display='none';
-                document.getElementById('difficulte').style.display='block';
-
-
             }
-
+            function save_LECTURE() {
+                donne = document.getElementById('LECTURE').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
+                console.log(donne);
+            }
+            function save_ECRITURE() {
+                donne = document.getElementById('ECRITURE').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
+                console.log(donne);
+            }
+            function save_Facile() {
+                diff = document.getElementById('Facile').innerText;
+                console.log(diff);
+            }
+            function save_Normal() {
+                diff = document.getElementById('Normal').innerText;
+                console.log(diff);
+            } function save_Difficile() {
+                diff = document.getElementById('Difficile').innerText;
+                console.log(diff);
+            }
         </script>
     </body>
 </html>
