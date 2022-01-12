@@ -100,7 +100,7 @@
                     location.href = "calcul.html";
                 }
                 if( donne == "LECTURE"){
-                    location.href = "lecture.html";
+                    location.href = "lectureFacile.html";
                 }
                 if( donne == "ECRITURE"){
                     location.href = "ecriture.html";
@@ -109,8 +109,17 @@
             }
             function save_Normal() {
                 diff = document.getElementById('Normal').innerText;
-
+                if( donne == "CALCUL"){
+                    location.href = "calcul.html";
+                }
+                if( donne == "LECTURE"){
+                    location.href = "lectureMoyen.html";
+                }
+                if( donne == "ECRITURE"){
+                    location.href = "ecriture.html";
+                }
                 console.log(diff);
+
             } function save_Difficile() {
                 diff = document.getElementById('Difficile').innerText;
                 console.log(diff);

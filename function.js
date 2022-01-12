@@ -3,7 +3,7 @@ let cpt_player=0;
 // Compteur du nombre de question effectué
 let cpt_tot=0;
 // Question de manière aléatoire
-let val = Math.floor(Math.random() * 10);
+let val = 0;
 let img;
 
 // Affiche si la réponse donné est bonne ou fausse
@@ -45,8 +45,8 @@ function printQuestion(mode){
     if (mode === "Facile"){
         document.getElementById("question").innerHTML = data.Facile[val].question;
     }
-    else if (mode === "Moyen"){
-        document.getElementById("question").innerHTML = data.Moyen[val].question;
+    else if (mode === "Normal"){
+        document.getElementById("question").innerHTML = data.Normal[val].question;
     }
     else {
         document.getElementById("question").innerHTML = data.Difficile[val].question;
@@ -63,6 +63,16 @@ function update(mode){
     printImage();
 }
 
+// Mise a jour de la page de lecture après clic sur button valider
+function updateLecture(mode){
+    if(val < 5){
+        stopGame(10);
+        printResponse(mode);
+        val+=1;
+        printQuestion(mode);
+    }
+}
+
 // Affichage d'une image
 function printImage(){
     img = document.createElement("img");
@@ -71,6 +81,19 @@ function printImage(){
     let div = document.getElementById("image");
     div.appendChild(img);
     img.setAttribute("style", "width: 120px;");
+}
+
+// Affichage d'un texte
+function printTexte(mode){
+    if (mode === "Facile"){
+        document.getElementById("texte").innerHTML = data.Facile[val].texte;
+    }
+    else if (mode === "Normal"){
+        document.getElementById("texte").innerHTML = data.Normal[val].texte;
+    }
+    else {
+        document.getElementById("texte").innerHTML = data.Difficile[val].texte;
+    }
 }
 
 // Suppression de l'image
