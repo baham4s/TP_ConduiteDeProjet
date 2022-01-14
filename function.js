@@ -10,22 +10,30 @@ let img;
 function printResponse(mode) {
     let rep = document.getElementById("reponseInput").value;
     if (mode === "Facile"){
-        return strResponse(rep.localeCompare(data.Facile[val].reponse));
+        return strResponse(rep.localeCompare(data.Facile[val].reponse), mode);
     }
-    else if (mode === "Moyen"){
-        return strResponse(rep.localeCompare(data.Moyen[val].reponse));
+    else if (mode === "Normal"){
+        return strResponse(rep.localeCompare(data.Moyen[val].reponse), mode);
     }
     else {
-        return strResponse(rep.localeCompare(data.Difficile[val].reponse));
+        return strResponse(rep.localeCompare(data.Difficile[val].reponse), mode);
     }
 }
 
 
-function strResponse(value){
+function strResponse(value, mode){
     document.getElementById("reponseInput").value = ""
     if(value){
         document.getElementById("printRes").innerHTML = "Réponse fausse";
-        document.getElementById("res").innerHTML = "La réponse à "+ data.Facile[val].question + data.Facile[val].reponse;
+        if (mode === "Facile"){
+            document.getElementById("res").innerHTML = "La réponse à "+ data.Facile[val].question + data.Facile[val].reponse;
+        }
+        else if (mode === "Normal"){
+            document.getElementById("res").innerHTML = "La réponse à "+ data.Moyen[val].question + data.Moyen[val].reponse;
+        }
+        else {
+            document.getElementById("res").innerHTML = "La réponse à "+ data.Difficile[val].question + data.Difficile[val].reponse;
+        }
     }
     else{
         document.getElementById("printRes").innerHTML = "Réponse bonne";
@@ -89,12 +97,10 @@ function updateEcriture(mode){
 }
 // Mise a jour de la page de lecture après clic sur button valider
 function updateLecture(mode){
-    if(val < 5){
-        stopGame(10);
-        printResponse(mode);
-        val+=1;
-        printQuestion(mode);
-    }
+    stopGame(5);
+    printResponse(mode);
+    val+=1;
+    printQuestion(mode);
 }
 
 // Affichage d'une image

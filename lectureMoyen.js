@@ -1,5 +1,5 @@
 data={
-    "Normal":[
+    "Moyen":[
         {
             "question":"Comment s’appelle le sport auquel assistent les habitants ? ",
             "reponse":"Les joutes",
