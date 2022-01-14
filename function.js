@@ -130,6 +130,6 @@ function deleteImage(){
 function stopGame(limite){
     if(limite === cpt_tot){
         alert("Votre score : " + cpt_player + "/" + cpt_tot);
-        window.location.href = "menu.html"
+        window.location.href = "index.html"
     }
 }
