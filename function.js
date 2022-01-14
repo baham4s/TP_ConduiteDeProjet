@@ -46,10 +46,23 @@ function printQuestion(mode){
         document.getElementById("question").innerHTML = data.Facile[val].question;
     }
     else if (mode === "Normal"){
-        document.getElementById("question").innerHTML = data.Normal[val].question;
+        document.getElementById("question").innerHTML = data.Moyen[val].question;
     }
     else {
         document.getElementById("question").innerHTML = data.Difficile[val].question;
+    }
+}
+
+// Affichage des aides
+function printaideEcriture(mode){
+    if (mode === "Facile"){
+        document.getElementById("possibilite").innerHTML = data.Facile[val].aide;
+    }
+    else if (mode === "Normal"){
+        document.getElementById("possibilite").innerHTML = data.Moyen[val].aide;
+    }
+    else {
+        document.getElementById("possibilite").innerHTML = data.Difficile[val].aide;
     }
 }
 
@@ -62,7 +75,18 @@ function update(mode){
     deleteImage();
     printImage();
 }
+// Mise a jour de la page après clic sur button validé
 
+function updateEcriture(mode){
+    stopGame(10);
+    printResponse(mode);
+    printaideEcriture(mode);
+    val+=1;
+    printQuestion(mode);
+    printaideEcriture(mode);
+
+
+}
 // Mise a jour de la page de lecture après clic sur button valider
 function updateLecture(mode){
     if(val < 5){
@@ -89,7 +113,7 @@ function printTexte(mode){
         document.getElementById("texte").innerHTML = data.Facile[val].texte;
     }
     else if (mode === "Normal"){
-        document.getElementById("texte").innerHTML = data.Normal[val].texte;
+        document.getElementById("texte").innerHTML = data.Moyen[val].texte;
     }
     else {
         document.getElementById("texte").innerHTML = data.Difficile[val].texte;

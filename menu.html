@@ -116,13 +116,22 @@
                     location.href = "lectureMoyen.html";
                 }
                 if( donne == "ECRITURE"){
-                    location.href = "ecriture.html";
+                    location.href = "ecritureNormale.html";
                 }
                 console.log(diff);
 
             } function save_Difficile() {
                 diff = document.getElementById('Difficile').innerText;
                 console.log(diff);
+                if( donne == "CALCUL"){
+                    location.href = "calcul.html";
+                }
+                if( donne == "LECTURE"){
+                    location.href = "lectureMoyen.html";
+                }
+                if( donne == "ECRITURE"){
+                    location.href = "ecritureDifficile.html";
+                }
             }
         </script>
     </body>
