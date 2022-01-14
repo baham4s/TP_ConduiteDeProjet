@@ -19,6 +19,8 @@ h2{
     margin-bottom: 2%;
     font-size: 18px;
     border: solid;
+    background-color: white;
+
     text-align: center;
 }
 
@@ -109,8 +111,8 @@ button:hover span:after {
     text-align: justify;
 }
 #explication{
-    width: 70px;
-    height: 100px;
+    width: 55px;
+    height: 85px;
 }
 
 #sg{
