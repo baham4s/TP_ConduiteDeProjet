@@ -90,6 +90,7 @@ function printScore(){
     document.getElementById("cpt").innerHTML = cpt_player + "/" + cpt_tot;
 }
 
+
 // Affichage des questions
 function printQuestion(mode){
     if (mode === "Facile"){
