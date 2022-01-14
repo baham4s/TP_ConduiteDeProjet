@@ -152,7 +152,7 @@ function printImage(){
 
     let div = document.getElementById("image");
     div.appendChild(img);
-    img.setAttribute("style", "width: 120px;");
+    img.setAttribute("style", "width: 240px;");
 }
 
 // Affichage d'un texte
