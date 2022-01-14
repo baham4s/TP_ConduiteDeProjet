@@ -4,22 +4,22 @@
     <title>Serious Game GR6</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="lectureMoyen.js"></script>
+    <script type="text/javascript" src="lectureImage.js"></script>
     <script type="text/javascript" src="function.js"></script>
     <a href="index.html">
         <img width="130" height="100" src="logo.PNG" alt="Paris" class="center">
     </a>
-    <h1>Lecture</h1>
+    <h1>Lecture d'image</h1>
 </head>
 
 <body background="background.jpg">
 <div class="contener">
-    <div class="texte" id="texte">
-        <script>printTexte("Normal");</script>
+    <div class="image" id="image">
+        <script>printImage();</script>
     </div>
 
     <div class="question" id="question">
-        <script>printQuestion("Normal")</script>
+        <script>printQuestion('Facile');</script>
     </div>
 
     <div class="reponse">
@@ -29,7 +29,7 @@
 
 
     <div class="valider">
-        <input type="submit" id="validerInput" value="Valider la reponse" onclick="updateLecture('Normal')">
+        <input type="submit" id="validerInput" value="Valider la reponse" onclick="updateLecture('Facile')" onclick="deleteImage()">
     </div>
 
 

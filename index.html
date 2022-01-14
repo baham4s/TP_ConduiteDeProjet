@@ -39,6 +39,12 @@
             </button>
         </center>
 
+        <center>
+            <button >
+            <a href=# id="LECTURE_IMAGE"  onClick="save_LECT_IMG()"><span >LECTURE IMAGE</span></a>
+            </button>
+        </center>
+
     </div>
     <div id="difficulte">
         <h1> Menu</h1>
@@ -96,6 +102,11 @@
                 document.getElementById('theme').style.display = 'none';
                 document.getElementById('difficulte').style.display = 'block';
                 console.log(donne);
+            }
+            function save_LECT_IMG(){
+                donne = document.getElementById('LECTURE_IMAGE').innerText;
+                console.log(donne);
+                location.href = "lectureImage.html";
             }
             function save_Facile() {
                 diff = document.getElementById('Facile').innerText;
