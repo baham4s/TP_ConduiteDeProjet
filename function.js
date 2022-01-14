@@ -19,7 +19,7 @@ function printResponse(mode) {
         return strResponse(rep.localeCompare(data.Difficile[val].reponse), mode);
     }
 }
-
+//Méthode de vérification pour lecture
 function compareResponse(mode){
     let i;
     let v;
@@ -63,6 +63,7 @@ function compareResponse(mode){
     return strResponse(0, mode);
 }
 
+//Affichage de la réponse si elle est fausse
 function strResponse(value, mode){
     document.getElementById("reponseInput").value = ""
     if(value){
@@ -182,6 +183,7 @@ function stopGame(limite){
     }
 }
 
+//Forcer utilisateur entrer un nombre
 function onlyNumberKey(evt) {
 
     // Only ASCII character in that range allowed
