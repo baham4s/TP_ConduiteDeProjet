@@ -2,7 +2,7 @@ data = {
     "Difficile":[
         {
             "question":"Quelle est la caractéristiques à ne pas négliger pour ne pas se faire mal au dos ?",
-            "reponse":"Taille",
+            "reponse":["TAILLE"],
             "texte":"Dans le cadre d’un achat d’aspirateur, il est très important de choisir un appareil offrant de bonnes caractéristiques, en plus d’une utilisation pratique. En effet, s’occuper des tâches ménagères ne représente pas forcément un plaisir alors autant les réaliser dans de bonnes conditions !\\n\\n\n" +
                 "Côté pratique, assurez-vous avant votre achat que l’aspirateur de votre choix propose des commandes faciles d’accès, que ce soit via une poignée ou au pied. Si vous en avez également la possibilité, favorisez un appareil équipé d’un manche télescopique, ceci afin d’avoir un équipement à votre taille... idéal pour ne pas se faire mal au dos.\\n\\n\n" +
                 "D’autres éléments pratiques concernent quant à eux la longueur du fil ainsi que l’enrouleur. Selon la taille de votre habitation, il peut être judicieux de privilégier un appareil équipé d’unlong fil, ceci afin de vous éviter de débrancher/rebrancher votre appareil plusieurs fois au cours de la même séance de tâches ménagères. Pour ce qui est de l’enrouleur, c’est un petit plus non négligeable qui permet de ranger le fil en toute simplicité.\\n\\n\n" +
@@ -11,7 +11,7 @@ data = {
         },
         {
             "question":"De quoi va dépendre la longueur de fil de votre aspirateur ?",
-            "reponse":"Taille de l'habitation",
+            "reponse":["TAILLE", "HABITATION"],
             "texte":"Dans le cadre d’un achat d’aspirateur, il est très important de choisir un appareil offrant de bonnes caractéristiques, en plus d’une utilisation pratique. En effet, s’occuper des tâches ménagères ne représente pas forcément un plaisir alors autant les réaliser dans de bonnes conditions !\\n\\n\n" +
                 "Côté pratique, assurez-vous avant votre achat que l’aspirateur de votre choix propose des commandes faciles d’accès, que ce soit via une poignée ou au pied. Si vous en avez également la possibilité, favorisez un appareil équipé d’un manche télescopique, ceci afin d’avoir un équipement à votre taille... idéal pour ne pas se faire mal au dos.\\n\\n\n" +
                 "D’autres éléments pratiques concernent quant à eux la longueur du fil ainsi que l’enrouleur. Selon la taille de votre habitation, il peut être judicieux de privilégier un appareil équipé d’unlong fil, ceci afin de vous éviter de débrancher/rebrancher votre appareil plusieurs fois au cours de la même séance de tâches ménagères. Pour ce qui est de l’enrouleur, c’est un petit plus non négligeable qui permet de ranger le fil en toute simplicité.\\n\\n\n" +
@@ -20,7 +20,7 @@ data = {
         },
         {
             "question":"Quel petit plus permet de ranger le fil en toute simplicité ? ",
-            "reponse":"Enrouleur",
+            "reponse":["ENROULEUR"],
             "texte":"Dans le cadre d’un achat d’aspirateur, il est très important de choisir un appareil offrant de bonnes caractéristiques, en plus d’une utilisation pratique. En effet, s’occuper des tâches ménagères ne représente pas forcément un plaisir alors autant les réaliser dans de bonnes conditions !\\n\\n\n" +
                 "Côté pratique, assurez-vous avant votre achat que l’aspirateur de votre choix propose des commandes faciles d’accès, que ce soit via une poignée ou au pied. Si vous en avez également la possibilité, favorisez un appareil équipé d’un manche télescopique, ceci afin d’avoir un équipement à votre taille... idéal pour ne pas se faire mal au dos.\\n\\n\n" +
                 "D’autres éléments pratiques concernent quant à eux la longueur du fil ainsi que l’enrouleur. Selon la taille de votre habitation, il peut être judicieux de privilégier un appareil équipé d’unlong fil, ceci afin de vous éviter de débrancher/rebrancher votre appareil plusieurs fois au cours de la même séance de tâches ménagères. Pour ce qui est de l’enrouleur, c’est un petit plus non négligeable qui permet de ranger le fil en toute simplicité.\\n\\n\n" +
@@ -29,7 +29,7 @@ data = {
         },
         {
             "question":"Quels sont les deux critères qui facilitent l’utilisation d’un aspirateur ? ",
-            "reponse":"Appareil léger et roues multidirectionnelle",
+            "reponse":["APPAREIL", "LEGER", "ROUES", "MULTIDIRECTIONNELLE"],
             "texte":"Dans le cadre d’un achat d’aspirateur, il est très important de choisir un appareil offrant de bonnes caractéristiques, en plus d’une utilisation pratique. En effet, s’occuper des tâches ménagères ne représente pas forcément un plaisir alors autant les réaliser dans de bonnes conditions !\\n\\n\n" +
                 "Côté pratique, assurez-vous avant votre achat que l’aspirateur de votre choix propose des commandes faciles d’accès, que ce soit via une poignée ou au pied. Si vous en avez également la possibilité, favorisez un appareil équipé d’un manche télescopique, ceci afin d’avoir un équipement à votre taille... idéal pour ne pas se faire mal au dos.\\n\\n\n" +
                 "D’autres éléments pratiques concernent quant à eux la longueur du fil ainsi que l’enrouleur. Selon la taille de votre habitation, il peut être judicieux de privilégier un appareil équipé d’unlong fil, ceci afin de vous éviter de débrancher/rebrancher votre appareil plusieurs fois au cours de la même séance de tâches ménagères. Pour ce qui est de l’enrouleur, c’est un petit plus non négligeable qui permet de ranger le fil en toute simplicité.\\n\\n\n" +
@@ -38,7 +38,7 @@ data = {
         },
         {
             "question":"Les trois types d’aspirateurs les plus faciles à ranger ? ",
-            "reponse":"Balais, robot et à main",
+            "reponse":["BALAIS", "ROBOT", "MAIN"],
             "texte":"Dans le cadre d’un achat d’aspirateur, il est très important de choisir un appareil offrant de bonnes caractéristiques, en plus d’une utilisation pratique. En effet, s’occuper des tâches ménagères ne représente pas forcément un plaisir alors autant les réaliser dans de bonnes conditions !\\n\\n\n" +
                 "Côté pratique, assurez-vous avant votre achat que l’aspirateur de votre choix propose des commandes faciles d’accès, que ce soit via une poignée ou au pied. Si vous en avez également la possibilité, favorisez un appareil équipé d’un manche télescopique, ceci afin d’avoir un équipement à votre taille... idéal pour ne pas se faire mal au dos.\\n\\n\n" +
                 "D’autres éléments pratiques concernent quant à eux la longueur du fil ainsi que l’enrouleur. Selon la taille de votre habitation, il peut être judicieux de privilégier un appareil équipé d’unlong fil, ceci afin de vous éviter de débrancher/rebrancher votre appareil plusieurs fois au cours de la même séance de tâches ménagères. Pour ce qui est de l’enrouleur, c’est un petit plus non négligeable qui permet de ranger le fil en toute simplicité.\\n\\n\n" +
