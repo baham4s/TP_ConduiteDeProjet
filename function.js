@@ -20,6 +20,48 @@ function printResponse(mode) {
     }
 }
 
+function compareResponse(mode){
+    let i;
+    let v;
+    if (mode === "Facile"){
+        v = (data.Facile[val].reponse).length;
+    }
+    else if (mode === "Normal"){
+        v = (data.Moyen[val].reponse).length;
+    }
+    else {
+        v = (data.Difficile[val].reponse).length;
+    }
+
+    let rep = (document.getElementById("reponseInput").value).toUpperCase();
+    let tmp = rep.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g," ");
+    let repo = tmp.split(' ');
+
+    if (mode === "Facile"){
+        for(i = 0; i < v; i++){
+            if (repo.indexOf(data.Facile[val].reponse[i]) < 0) {
+                return strResponse(1, mode);
+            }
+        }
+    }
+
+    else if (mode === "Normal"){
+        for(i = 0; i < v; i++){
+            if (repo.indexOf(data.Moyen[val].reponse[i]) < 0) {
+                return strResponse(1, mode);
+            }
+        }
+    }
+
+    else {
+        for(i = 0; i < v; i++){
+            if (repo.indexOf(data.Difficile[val].reponse[i]) < 0) {
+                return strResponse(1, mode);
+            }
+        }
+    }
+    return strResponse(0, mode);
+}
 
 function strResponse(value, mode){
     document.getElementById("reponseInput").value = ""
@@ -92,13 +134,12 @@ function updateEcriture(mode){
     val+=1;
     printQuestion(mode);
     printaideEcriture(mode);
-
-
 }
+
 // Mise a jour de la page de lecture après clic sur button valider
 function updateLecture(mode){
     stopGame(5);
-    printResponse(mode);
+    compareResponse(mode);
     val+=1;
     printQuestion(mode);
 }
