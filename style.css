@@ -29,7 +29,13 @@ h2{
     text-align: center; 
 }
 
+.reponse{
+    margin-bottom: 1%;
+}
 
+.image{
+    margin-top: 1%;
+}
 
 .question{
     font-size: 25px;

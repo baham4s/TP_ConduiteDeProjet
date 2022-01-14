@@ -3,32 +3,32 @@ data={
         {
             "image":"img/picto.PNG",
             "question":"Que représente le pictogramme 1 ?",
-            "reponse":["Explosif","explosif"]
+            "reponse":["EXPLOSIF"]
         },
         {
             "image":"img/picto.PNG",
             "question":"Que représente le pictogramme 2 ?",
-            "reponse":"Inflammable"
+            "reponse":["INFLAMMABLE","FEU","INFLAMABLE"]
         },
         {
             "image":"img/picto.PNG",
             "question":"Que représente le pictogramme 3 ?",
-            "reponse":"Comburant"
+            "reponse":["COMBURANT"]
         },
         {
             "image":"img/picto.PNG",
             "question":"Que représente le pictogramme 4 ?",
-            "reponse":"Gaz sous pression"
+            "reponse":["GAZ"]
         },
         {
             "image":"img/picto.PNG",
             "question":"Que représente le pictogramme 5 ?",
-            "reponse":"Corrosif"
+            "reponse":["CORRISIF","CORISIF"]
         },
         {
             "image":"img/picto.PNG",
             "question":"Que représente le pictogramme 6 ?",
-            "reponse":"Toxicité"
+            "reponse":["TOXIC","TOXICITE"]
         },
     ]
 }
