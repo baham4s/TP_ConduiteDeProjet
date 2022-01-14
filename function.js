@@ -121,7 +121,7 @@ function printaideEcriture(mode){
 function update(mode){
     stopGame(10);
     printResponse(mode);
-    val = Math.floor(Math.random() * 10);
+    val+=1;
     printQuestion(mode);
     deleteImage();
     printImage();
